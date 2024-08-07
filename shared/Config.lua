@@ -35,7 +35,7 @@ Config.TargetImpound = {
 
     ['police'] = {                  -- jobName
         minGrades = 0,              -- Min Grade to use
-        impoundName = "DETRAN" -- Impound to send vehicle
+        impoundName = "Impound Car" -- Impound to send vehicle
     },
 
 }
@@ -52,7 +52,7 @@ Config.GaragesDefault = {
         intocar = false,                                                                                                      -- Player in to car? | boolean
         isShared = false,                                                                                                     -- Take all vehicles from diferent garages.
         carType = { 'automobile', 'bicycle', 'bike', 'quadbike', 'trailer', 'amphibious_quadbike', 'amphibious_automobile' }, -- automobile, bike, boat, heli, plane, submarine, trailer, train | string
-        defaultImpound = 'impound',                                                                                       -- Name of impound  | string / false
+        defaultImpound = 'Impound Car',                                                                                       -- Name of impound  | string / false
         priceImpound = 110,                                                                                                   -- Price of impound | number
         defaultCars = false,                                                                                                  -- Table {model,plate,price?} | boolean
         actioncoords = vec4(214.6645, -807.0635, 29.8006, 338.9730),                                                          -- vector4
@@ -131,7 +131,7 @@ Config.GaragesDefault = {
         }
     },
     {
-        name = "DETRAN",
+        name = "Impound Car",
         garagetype = 'impound',
         defaultGarage = 'Pillbox Hill',
         debug = false,
@@ -202,7 +202,7 @@ Config.GaragesDefault = {
         }
     },
     {
-        name = "ANAC",
+        name = "Impound Air",
         garagetype = 'garage',
         debug = false,
         zoneType = 'target',
@@ -259,7 +259,7 @@ Config.GaragesDefault = {
         }
     },
     {
-        name = "MARINHA",
+        name = "Impound Boat",
         garagetype = 'impound',
         debug = false,
         zoneType = 'target',
@@ -290,7 +290,7 @@ Config.GaragesDefault = {
 
     --- Custom
     {
-        name = "PMAL",
+        name = "LSPD",
         garagetype = 'custom',
         debug = false,
         zoneType = 'target',
@@ -319,5 +319,7 @@ Config.GaragesDefault = {
             vec4(449.81292724609, -1018.3796386719, 27.528268814087, 330.99160766602)
         }
     },
+
+}
 
 }
